@@ -238,13 +238,28 @@ nav a:hover {
 
 .gallery {
   padding-top: 0;
-  height: 100vh;
+  /* height: 100vh; */
 
   color: white;
   background-image: url('./img/gallery.jpg');
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
+}
+
+.gallery div {
+  background-color: rgba(59, 56, 56, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.gallery__text {
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
 }
 
 .contacts {
