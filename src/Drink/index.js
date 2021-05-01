@@ -18,7 +18,7 @@ const Drink = ({ id, name, ordered, layers }) => {
       <div class="drink__info"></div>
     </div>
     <div class="drink__controls">
-      <button class="order-btn">Objednat</button>
+      <button class="order-btn" ordered=${ordered}>Objednat</button>
     </div>
   `;
 
@@ -26,6 +26,22 @@ const Drink = ({ id, name, ordered, layers }) => {
     <h3>${name}</h3>
     ${layersHTML}
   `;
+
+  // order
+  const orderBtn = element.querySelector('.order-btn');
+  const drinkCup = element.querySelector('.drink__cup');
+
+  orderBtn.addEventListener('click', () => {
+    if (ordered) {
+      orderBtn.textContent = 'Objednat';
+      drinkCup.classList.toggle('drink__cup--selected');
+      ordered = false;
+    } else {
+      orderBtn.textContent = 'Zrušit';
+      drinkCup.classList.toggle('drink__cup--selected');
+      ordered = true;
+    }
+  });
 
   return element;
 };

@@ -6,7 +6,6 @@ console.log('funguju!');
 const navBtn = document.querySelector('#nav-btn');
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('.nav-link');
-const orderBtn = document.querySelector('.order-btn');
 const drinkList = document.querySelector('.drinks-list');
 
 // toggle navigation
@@ -21,28 +20,27 @@ for (let i = 0; i < navLinks.length; i++) {
   });
 }
 
-// order
-// orderBtn.addEventListener('click', () => {
-//   if (ordered) {
-//     orderBtn.textContent = 'Zrušit';
-//     drinkCup.classList.add('.drink__cup--selected');
-//     ordered = true;
-//   } else {
-//     orderBtn.textContent = 'Objednat';
-//     drinkCup.classList.remove('.drink__cup--selected');
-//     ordered = false;
-//   }
-// });
-
-// orderBtn.addEventListener('click', () => {
-//   orderBtn.textContent === 'Objednat'
-//     ? (orderBtn.textContent = 'Zrušit')
-//     : (orderBtn.textContent = 'Objednat');
-//   drinkCup.classList.toggle('.drink__cup--selected');
-// });
-
-drinkList.appendChild(
-  Drink({
+const drinks = [
+  {
+    id: 'cappuccino',
+    name: 'Cappuccino',
+    ordered: false,
+    layers: [
+      {
+        color: '#feeeca',
+        label: 'mléčná pěna',
+      },
+      {
+        color: '#fed7b0',
+        label: 'teplé mléko',
+      },
+      {
+        color: '#613916',
+        label: 'espresso',
+      },
+    ],
+  },
+  {
     id: 'romano',
     name: 'Romano',
     ordered: false,
@@ -56,5 +54,7 @@ drinkList.appendChild(
         label: 'espresso',
       },
     ],
-  }),
-);
+  },
+];
+
+drinks.forEach((drink) => drinkList.appendChild(Drink(drink)));
