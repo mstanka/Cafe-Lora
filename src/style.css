@@ -47,6 +47,9 @@ header {
   padding: 1rem 0 1rem 0;
   height: 5rem;
   background-color: #301a1a;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topbar {
