@@ -1,20 +1,18 @@
 import './style.css';
 
-const drinkInfo = document.querySelector('.drink__info');
-
 const Layer = ({ color, label }) => {
-  const layer = document.createElement('div');
-  layer.classList.add('layer');
+  const element = document.createElement('div');
+  element.classList.add('layer');
 
-  layer.innerHTML = `
+  element.innerHTML = `
     <div
       class="layer__color"
-      style="background-color: ${color}
+      style="background-color: ${color}"
       ></div>
     <div class="layer__label">${label}</div>
   `;
 
-  return drinkInfo.appendChild(layer);
+  return element;
 };
 
 export default Layer;
