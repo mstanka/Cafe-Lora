@@ -1,7 +1,12 @@
 import Layer from '../Layer';
 import './style.css';
 
-const Drink = ({ id, name, ordered }) => {
+const Drink = ({ id, name, ordered, layers }) => {
+  let layersHTML = '';
+  for (let i = 0; i < layers.length; i++) {
+    layersHTML += Layer(layers[i]);
+  }
+
   const element = document.createElement('div');
   element.classList.add('drink');
 
@@ -19,7 +24,7 @@ const Drink = ({ id, name, ordered }) => {
 
   element.querySelector('.drink__info').innerHTML = `
     <h3>${name}</h3>
-    ${Layer}
+    ${layersHTML}
   `;
 
   return element;

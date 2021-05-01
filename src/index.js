@@ -9,8 +9,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 const orderBtn = document.querySelector('.order-btn');
 const drinkList = document.querySelector('.drinks-list');
 
-let ordered = false;
-
 // toggle navigation
 navBtn.addEventListener('click', () => {
   nav.classList.toggle('nav-closed');
@@ -34,6 +32,13 @@ for (let i = 0; i < navLinks.length; i++) {
 //     drinkCup.classList.remove('.drink__cup--selected');
 //     ordered = false;
 //   }
+// });
+
+// orderBtn.addEventListener('click', () => {
+//   orderBtn.textContent === 'Objednat'
+//     ? (orderBtn.textContent = 'Zrušit')
+//     : (orderBtn.textContent = 'Objednat');
+//   drinkCup.classList.toggle('.drink__cup--selected');
 // });
 
 drinkList.appendChild(
