@@ -30,7 +30,7 @@ orderBtn.addEventListener('click', () => {
 });
 
 // ingredients
-const ingredients = [
+const layers = [
   {
     color: '#feeeca',
     label: 'mléčná pěna',
@@ -45,6 +45,4 @@ const ingredients = [
   },
 ];
 
-Layer(ingredients[0]);
-Layer(ingredients[1]);
-Layer(ingredients[2]);
+layers.forEach((layer) => Layer(layer));
