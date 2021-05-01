@@ -15,16 +15,14 @@ const Drink = ({ id, name, ordered, layers }) => {
       <div class="drink__cup">
         <img src="/assets/cups/${id}.png" />
       </div>
-      <div class="drink__info"></div>
+      <div class="drink__info">
+        <h3>${name}</h3>
+        ${layersHTML}
+      </div>
     </div>
     <div class="drink__controls">
       <button class="order-btn" ordered=${ordered}>Objednat</button>
     </div>
-  `;
-
-  element.querySelector('.drink__info').innerHTML = `
-    <h3>${name}</h3>
-    ${layersHTML}
   `;
 
   // order

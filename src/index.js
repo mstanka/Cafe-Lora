@@ -1,8 +1,6 @@
 import Drink from './Drink';
 import './style.css';
 
-console.log('funguju!');
-
 const navBtn = document.querySelector('#nav-btn');
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('.nav-link');
