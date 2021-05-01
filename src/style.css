@@ -7,6 +7,7 @@
 html {
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
