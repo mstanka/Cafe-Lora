@@ -1,4 +1,5 @@
 import './style.css';
+import Layer from './Layer';
 
 console.log('funguju!');
 
@@ -27,3 +28,23 @@ orderBtn.addEventListener('click', () => {
     : (orderBtn.textContent = 'Objednat');
   drinkCup.classList.toggle('.drink__cup--selected');
 });
+
+// ingredients
+const ingredients = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+
+Layer(ingredients[0]);
+Layer(ingredients[1]);
+Layer(ingredients[2]);

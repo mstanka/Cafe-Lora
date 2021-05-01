@@ -1,101 +1,84 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Café Lóra</title>
-  </head>
-  <body>
-    <section class="banner">
-      <header>
-        <div class="topbar container">
-          <div class="site-logo"></div>
-          <div class="navigation">
-            <button id="nav-btn" class="nav-btn"></button>
-            <nav class="nav-closed">
-              <a href="#" class="nav-link">domů</a>
-              <a href="#menu" class="nav-link">menu</a>
-              <a href="#gallery" class="nav-link">galerie</a>
-              <a href="#contact" class="nav-link">kontakt</a>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <div class="container">
-        <div class="intro">
-          <h1>Přijď to ochutnat!</h1>
-          <p>Nabízíme kvalitní kávu, útulné prostředí a perfektní servis.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Lóra</title>
+</head>
+
+<body>
+  <section class="banner">
+    <header>
+      <div class="topbar container">
+        <div class="site-logo"></div>
+        <div class="navigation">
+          <button id="nav-btn" class="nav-btn"></button>
+          <nav class="nav-closed">
+            <a href="#" class="nav-link">domů</a>
+            <a href="#menu" class="nav-link">menu</a>
+            <a href="#gallery" class="nav-link">galerie</a>
+            <a href="#contact" class="nav-link">kontakt</a>
+          </nav>
         </div>
       </div>
-    </section>
+    </header>
+    <div class="container">
+      <div class="intro">
+        <h1>Přijď to ochutnat!</h1>
+        <p>Nabízíme kvalitní kávu, útulné prostředí a perfektní servis.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="menu" id="menu">
-      <div class="container">
-        <h2>Naše nabídka</h2>
-        <p class="menu-intro">
-          Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
-        </p>
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2>Naše nabídka</h2>
+      <p class="menu-intro">
+        Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
+      </p>
 
-        <div class="drinks-list">
-          <div class="drink">
-            <div class="drink__product">
-              <div class="drink__cup">
-                <img src="/assets/cups/cappuccino.png" />
-              </div>
-              <div class="drink__info">
-                <h3>Cappuccino</h3>
-                <div class="layer">
-                  <div
-                    class="layer__color"
-                    style="background-color: #feeeca"
-                  ></div>
-                  <div class="layer__label">mléčná pěna</div>
-                </div>
-                <div class="layer">
-                  <div
-                    class="layer__color"
-                    style="background-color: #fed7b0"
-                  ></div>
-                  <div class="layer__label">teplé mléko</div>
-                </div>
-
-                <div class="layer">
-                  <div
-                    class="layer__color"
-                    style="background-color: #613916"
-                  ></div>
-                  <div class="layer__label">espresso</div>
-                </div>
-              </div>
+      <div class="drinks-list">
+        <div class="drink">
+          <div class="drink__product">
+            <div class="drink__cup">
+              <img src="/assets/cups/cappuccino.png" />
             </div>
-            <div class="drink__controls">
-              <button class="order-btn">Objednat</button>
+            <div class="drink__info">
+              <h3>Cappuccino</h3>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery" id="gallery">
-      <div>
-        <p class="gallery__text">Malá roztomilá kavárnička kousek od řeky Jizery, kde si kromě dobré kávy můžete dát i sladké koláče či polévku. Někteří tvrdí, že zde mají nejlepší horkou čokoládu v celých Byškách nad Jizerou. Jestli to je pravda, to si budete muset už posoudit sami.</p>
-      </div>   
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2>Kde nás najdete</h2>
-        <div class="contacts">
-          <div class="contacts__address">
-            Na Mýtě 240 <br />
-            514 03 Byšky nad Jizerou <br />
-            Tel: +420 775 334 427
+          <div class="drink__controls">
+            <button class="order-btn">Objednat</button>
           </div>
-          <img src="/assets/map.png" class="contacts__map" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="/bundle.js"></script>
-  </body>
+  <section class="gallery" id="gallery">
+    <div>
+      <p class="gallery__text">Malá roztomilá kavárnička kousek od řeky Jizery, kde si kromě dobré kávy můžete dát i
+        sladké koláče či polévku. Někteří tvrdí, že zde mají nejlepší horkou čokoládu v celých Byškách nad Jizerou.
+        Jestli to je pravda, to si budete muset už posoudit sami.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Kde nás najdete</h2>
+      <div class="contacts">
+        <div class="contacts__address">
+          Na Mýtě 240 <br />
+          514 03 Byšky nad Jizerou <br />
+          Tel: +420 775 334 427
+        </div>
+        <img src="/assets/map.png" class="contacts__map" />
+      </div>
+    </div>
+  </section>
+
+  <script src="/bundle.js"></script>
+</body>
+
 </html>
