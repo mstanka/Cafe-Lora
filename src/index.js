@@ -57,4 +57,6 @@ const drinks = [
   },
 ];
 
-drinks.forEach((drink) => drinkList.appendChild(Drink(drink)));
+fetch('https://apps.kodim.cz/daweb/cafelora/api/drinks')
+  .then((response) => response.json())
+  .then((data) => data.forEach((drink) => drinkList.appendChild(Drink(drink))));
